@@ -9,7 +9,7 @@ plt.style.use('seaborn')
 
 
 st.title('California Housing Data(1990) by Xinyu Chen')
-House_price_filter = st.slider('Median House Price', 0, 500001, 20000)
+House_price_filter = st.slider('Median House Price', 0, 500001, 200000)
 df = df[df.median_house_value >= House_price_filter]
 
 ocean_proximity_filter = st.sidebar.multiselect(
